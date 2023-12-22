@@ -1,0 +1,138 @@
+nav
+    background-color: rgba(61, 36, 186, 0.9)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0 auto
+    padding: 1rem
+    z-index: 10
+    position: fixed
+    top: 0
+    width: 100%
+    .menu
+        display: flex
+        align-content: center
+        .nav_menu
+            display: flex
+        .nav_item
+            list-style: none
+            .nav_link
+                text-decoration: none
+                color: white
+                margin-right: 1rem
+                overflow: hidden
+                position: relative
+
+    .nav_logo
+        text-decoration: none
+        color: white
+
+// .nav_link
+//     .activate
+//         color: red
+
+.nav_link::after
+    background-color: white
+    content: ""
+    width: 0
+    height: 2px
+    left: 0
+    bottom: 0
+    transition: width 0.35s ease 0s
+    position: absolute
+
+.nav_link:hover::after
+    width: 100%
+
+// .nav_link::after
+//     content: ''
+//     display: inline-block
+//     width: 0
+//     padding: 0
+//     height: 2px
+//     background: white
+//     transition: width .3s
+
+// .nav_link:hover::after
+//     width: 100%
+    
+
+.dropdown_menu
+    display: none
+    z-index: 10
+    position: absolute
+    top: 100%
+    right: 10%
+    width: 10rem
+    padding: 0.3rem
+    background-color: white
+    .dropdown_item
+        list-style: none
+        padding: 0.7rem
+        .dropdown_link
+            text-decoration: none
+            color: black
+            display: block
+
+.started
+    color: white
+    border: 1px solid white
+    border-radius: 2px
+    padding: 0.2rem 0.5rem
+    background-color: transparent
+    cursor: pointer
+
+.bar
+    background-color: white
+    display: block
+    width: 25px
+    height: 3px
+    margin: 5px auto
+    transition: all 0.3s ease-in-out
+
+.burger
+    display: none
+
+@media only screen and (max-width: 900px)
+    .nav_menu
+        // display: block
+        position: fixed
+        top: -100%
+        left: 0
+        right: 0
+        flex-direction: column
+        width: 100%
+        text-align: center
+        transition: 1s
+        background-color: white
+        .nav_link
+            color: black !important
+
+    .nav_menu.active
+        top: 13%
+        height: 70vh
+    
+    .nav_item
+        margin: 1rem 0
+
+    .dropdown_menu
+        position: absolute
+        z-index: 10
+        top: 100%
+        right: 0
+        background-color: white
+
+    .started
+        display: none
+
+    .burger
+        display: block
+        cursor: pointer
+
+    .burger.active .bar:nth-child(2)
+        opacity: 0
+    .burger.active .bar:nth-child(1)
+        transform: translateY(8px) rotate(45deg)
+    .burger.active .bar:nth-child(3)
+        transform: translateY(-8px) rotate(-45deg)
+    

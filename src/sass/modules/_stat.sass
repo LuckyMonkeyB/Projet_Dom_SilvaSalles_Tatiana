@@ -1,0 +1,32 @@
+.stat
+    background-image: url('../../../public/images/counts-bg.png')
+    background-size: cover
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 4%
+    .stat_container
+        // display: flex
+        // flex-direction: row
+        // justify-content: space-evenly
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        width: 100%
+        .statistic
+            text-align: center
+            color: white
+
+h2
+    font-weight: 40px
+
+@media only screen and (max-width: 767px)
+    .stat_container
+        display: grid
+        grid-template-columns: 1fr !important
+        .statistic
+            margin: 1rem 0
+
+
+
+

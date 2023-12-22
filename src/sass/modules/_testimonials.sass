@@ -1,0 +1,114 @@
+.testimonials
+    background-color: rgb(249, 248, 255)
+    padding: 4%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100vh
+    .title
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-bottom: 2%
+
+
+.testi_container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+
+.carousel_containerS
+    width: 100%
+    height: 60vh
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 2%
+
+
+.carouselContent
+    height: 100%
+    display: grid
+    grid-auto-flow: column
+    grid-auto-columns: calc(100%/3)
+    // gap: 16px
+    overflow-x: hidden
+    scroll-snap-type: x mandatory
+    scroll-behavior: smooth
+
+
+
+.carouselItem
+    // width: 30%
+    // height: 40vh
+    // position: absolute
+    padding: 1rem
+    height: 100%
+    // position: relative
+
+
+
+.carouselText
+    padding: 4%
+    position: relative
+    background-color: white
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1)
+
+
+.itemPerso
+    display: flex
+    flex-direction: column
+    position: absolute
+
+
+.itemIcon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background-image: url(../../../public/images/avatar.jpg)
+    background-position: center
+    background-size: cover
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.231)
+
+.people
+    p:first-of-type
+        color: rgb(45, 73, 100)
+        font-weight: bold
+    p:last-of-type
+        color: rgb(157, 157, 157)
+
+
+.quote
+    color: rgb(177, 169, 252)
+
+.pagination
+    display: flex
+    justify-content: center
+    margin-top: 10px
+
+.dot
+    width: 20px
+    height: 20px
+    border-radius: 50px
+    border: 2px solid rgb(88, 70, 249)
+    z-index: 10
+    margin: 0 5px
+    cursor: pointer
+
+.dot:active
+    background-color: rgb(88, 70, 249)
+
+@media only screen and (max-width: 767px)
+    .carouselContent
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: 100%

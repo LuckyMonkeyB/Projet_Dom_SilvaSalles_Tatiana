@@ -1,0 +1,54 @@
+.voluptatem
+    // display: flex
+    // flex-direction: column
+    // justify-content: center
+    // align-items: center
+    padding: 4%
+    .volu_container
+        // display: flex
+        // flex-direction: row
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        .voluText
+            // width: 50%
+            padding: 2%
+            h2
+                color: rgb(45, 73, 100)
+            .fa-circle-check
+                color: rgb(88,70,249)
+        .voluImg
+            // width: 50%
+
+.voluText > p
+    margin: 1rem 0
+
+.read
+    padding: 0.3rem 1.4rem
+    background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%)
+    color: white
+    border: 1px solid white
+    border-radius: 4px
+    cursor: pointer
+
+
+img
+    max-width: 100%
+    height: auto
+
+
+@media only screen and (max-width: 767px)
+    .volu_container
+        display: grid
+        grid-template-columns: 1fr !important
+        place-content: center
+        margin-top: 2%
+
+@media only screen and (max-width: 900px)
+    .volu_container
+        display: grid
+        grid-template-columns: 1fr !important
+        .voluImg
+            display: grid
+            place-items: center
+            margin-top: 2%
+

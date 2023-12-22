@@ -1,0 +1,106 @@
+.tech
+    background-color: white
+    display: flex
+    flex-direction: column
+    padding: 4%
+    width: 100%
+    height: auto
+
+.current
+    color: rgb(68, 68, 68)
+
+
+.tabsTab
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 2% 0
+    .tabsMenu
+        display: flex
+        flex-direction: row
+        .ia, .dev, .ui
+            list-style: none
+            margin: 0 10px
+            cursor: pointer
+            // .tabsLink
+            //     text-decoration: none
+            //     color: black
+
+
+
+.tabsContent
+    // display: flex
+    // flex-direction: column
+    width: 100%
+
+
+.tabsTitle
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 2% 0
+
+.tabsTitle
+    p:first-of-type
+        color: rgb(104, 104, 119)
+    p:last-of-type
+        color: rgb(68, 68, 68)
+        font-weight: bold
+        font-size: 28px
+
+.tabsText
+    p:first-of-type
+        color: rgb(68, 68, 68)
+        font-weight: bold
+    p:last-of-type
+        color: rgb(104, 104, 119)
+
+
+.tabsCase
+    // display: flex
+    // flex-direction: column
+    // justify-content: space-between
+    // align-items: center
+    // width: 100%
+
+
+.tabsBox
+    // display: flex
+    // flex-direction: column
+    // justify-content: center
+    // align-items: center
+    // width: 30%
+    // max-width: 300px
+    // min-height: 250px
+    display: grid
+    place-items: center
+    .tabsText
+        text-align: center
+        padding: 4% 0
+    img
+        width: 100%
+        max-height: 200px
+.tabss
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 2rem
+    // place-items: center
+    // place-content: space-around
+
+
+.none
+    display: none
+
+.block
+    display: block
+
+
+@media only screen and (max-width: 767px)
+    .tabss
+        padding: 4rem
+        display: grid
+        grid-template-columns: 1fr
+        img
+        // place-items: center
