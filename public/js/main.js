@@ -73,11 +73,6 @@ servicesItem.forEach(e =>{
         e.querySelector('h4').style.color = 'white'
         e.querySelector('p').style.color = 'white'
         e.querySelector('i').style.color = 'white'
-        // Array.from(servicesItem).forEach(item =>{
-        //     item.querySelector('h4').style.color = 'white'
-        //     item.querySelector('p').style.color = 'white'
-        //     item.querySelector('i').style.color = 'white'
-        // })
     })
 })
 
@@ -127,10 +122,6 @@ servicesItem.forEach(e =>{
         })
         e.querySelector('h4').style.color = 'rgb(45, 73, 100)'
         e.querySelector('p').style.color = 'black'
-        // Array.from(servicesItem).forEach(item =>{
-        //     item.querySelector('h4').style.color = 'rgb(45, 73, 100)'
-        //     item.querySelector('p').style.color = 'black'
-        // })
     })
     
 })
