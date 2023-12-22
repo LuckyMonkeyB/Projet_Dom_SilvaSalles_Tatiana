@@ -70,10 +70,14 @@ servicesItem.forEach(e =>{
                 servicesItem[5].style.backgroundColor= 'rgb(39, 217, 207)';
                 break;
         }
-        
-        Array.from(servicesItem.children).forEach(item =>{
-            item.style.color = 'white'
-        })
+        e.querySelector('h4').style.color = 'white'
+        e.querySelector('p').style.color = 'white'
+        e.querySelector('i').style.color = 'white'
+        // Array.from(servicesItem).forEach(item =>{
+        //     item.querySelector('h4').style.color = 'white'
+        //     item.querySelector('p').style.color = 'white'
+        //     item.querySelector('i').style.color = 'white'
+        // })
     })
 })
 
@@ -121,8 +125,12 @@ servicesItem.forEach(e =>{
         Array.from(servicesItem).forEach(item =>{
             item.style.backgroundColor = 'white'
         })
-        servicesItem.querySelectorAll('h4').style.color = 'rgb(45, 73, 100)';
-        servicesItem.querySelectorAll('p').style.color = 'black';
+        e.querySelector('h4').style.color = 'rgb(45, 73, 100)'
+        e.querySelector('p').style.color = 'black'
+        // Array.from(servicesItem).forEach(item =>{
+        //     item.querySelector('h4').style.color = 'rgb(45, 73, 100)'
+        //     item.querySelector('p').style.color = 'black'
+        // })
     })
     
 })
