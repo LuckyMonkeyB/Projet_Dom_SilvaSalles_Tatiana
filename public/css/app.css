@@ -10460,10 +10460,6 @@ nav .nav_logo {
   color: white;
 }
 
-.nav_link .activate {
-  color: red;
-}
-
 .nav_link::after {
   background-color: white;
   content: "";

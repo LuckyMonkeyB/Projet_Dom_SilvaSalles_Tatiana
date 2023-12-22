@@ -20,6 +20,12 @@ let closeNav = () =>{
 burger.addEventListener('click', mobileNav);
 
 navLink.forEach((e) => e.addEventListener('click', closeNav));
+navLink.forEach((e) => e.addEventListener('click', ()=>{
+    if(e != dropdown_Toggler){
+        dropdown_menu.style.display = 'none'
+    }
+
+}));
 
 dropdown_Toggler.addEventListener('click', ()=>{
     dropdown_menu.style.display = (dropdown_menu.style.display === 'block')?'none':'block';
@@ -219,27 +225,6 @@ for(let i=0; i<accordionHeader.length; i++){
 }
 
 
-//? ----test-----
-
-// let carousel_Content = document.querySelector('.carousel_Content')
-// let items = document.querySelectorAll('.carouselCard')
-// let pagination = document.querySelectorAll('.pagination span')
-
-// let slideWidth = items[0].clientWidth;
-// maxSlide = items.length - 1
-
-// let currentIndex = 0
-
-// Array.from(pagination).forEach(bullet =>{
-//     bullet.addEventListener('click', ()=>{
-//         if(bullet.nextElementSibling){
-//             carousel_Content.scrollLeft += slideWidth
-//         }else if(bullet.previousElementSibling){
-//             carousel_Content.scrollLeft -= slideWidth
-//         }
-
-//     })
-// })
 
 
 
